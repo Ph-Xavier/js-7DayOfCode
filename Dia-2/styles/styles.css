@@ -1,0 +1,100 @@
+:root {
+  --white: white;
+
+  --tamanho-pequeno: 1.25em;
+  --tamanho-medio: 1.5em;
+
+  --peso-pequeno: 400;
+  --peso-medio: 500;
+  --peso-grande: 600;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+
+  background-image: url(../img/abstract_banner_with_flowing_waves_design_2202.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: rgb(0, 0, 0);
+
+  font-family: "Montserrat", sans-serif;
+  color: var(--white);
+}
+
+/* HEADER */
+
+.container {
+  height: 20%;
+  margin: 0 auto;
+}
+
+.container-titulo {
+  text-align: center;
+  margin: 30px 20px;
+  font-size: 3.25em;
+  font-weight: var(--peso-grande);
+}
+
+.container-texto {
+  margin-bottom: 10px;
+  font-size: var(--tamanho-medio);
+  font-weight: var(--peso-pequeno);
+}
+
+/* FORM */
+
+.form-titulo {
+  color: var(--white);
+  margin-bottom: 10px;
+  font-size: var(--tamanho-medio);
+}
+
+.form-input {
+  width: 100%;
+  padding: 10px 8px;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  font-size: var(--tamanho-pequeno);
+}
+
+.form-button {
+  width: 80%;
+  margin-top: 5%;
+  margin-left: 10%;
+  padding: 15px 20px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  border: none;
+  color: var(--white);
+  font-size: var(--tamanho-pequeno);
+  background: linear-gradient(135deg, #985098, #10b5dc);
+  transition: transform 0.2s ease;
+  cursor: pointer;
+}
+
+.form-button:hover {
+  background: linear-gradient(135deg, #10b5dc, #985098);
+  transform: scale(1.1);
+}
+
+/* Footer */
+
+.footer {
+  position: fixed;
+  text-align: center;
+  width: 100%;
+  padding: 50px 0px;
+  bottom: 0;
+  background: linear-gradient(135deg, #985098, #10b5dc);
+}
+
+.footer-texto {
+  text-transform: uppercase;
+  font-weight: var(--peso-grande);
+  font-size: var(--tamanho-medio);
+}
